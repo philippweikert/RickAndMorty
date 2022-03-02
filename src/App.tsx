@@ -1,10 +1,12 @@
 import './App.css';
-import Gallery from './Gallery/Gallery';
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <Gallery />
+      <div><Link to="gallery">Galerie</Link> </div>
+        <div><Outlet /></div>
+        <div>Footer</div>
     </div>
   );
 }

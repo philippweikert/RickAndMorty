@@ -1,5 +1,6 @@
 import { render, waitFor, screen, fireEvent } from '@testing-library/react';
 import Gallery from './Gallery';
+import {MemoryRouter} from 'react-router-dom';
 
 test('that items are filtered', async () => {
     jest.spyOn(global, 'fetch').mockImplementation(() => {
@@ -37,7 +38,7 @@ test('that items are filtered', async () => {
         } as Response);
     });
 
-    render(<Gallery />);
+    render(<Gallery />, {wrapper: MemoryRouter});
 
     await waitFor(() => {
         expect(screen.getAllByTestId('gallery-item').length).toBe(5);

@@ -1,0 +1,9 @@
+.character-detail {
+    border: 1px solid gray;
+    border-radius: 2%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}

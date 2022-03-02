@@ -3,7 +3,7 @@ import GalleryItem from './GalleryItem/GalleryItem';
 import { Character, Info, ResponseBody } from '../model';
 import './Gallery.css';
 
-export default function Galery() {
+export default function Gallery() {
 
     const [searchName, setSearchName] = useState('');
     const [items, setItems] = useState([] as Array<Character>);

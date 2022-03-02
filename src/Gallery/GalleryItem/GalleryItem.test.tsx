@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import GalleryItem from './GalleryItem';
+import {MemoryRouter} from "react-router-dom";
 
 test('that component is rendered correctly', () => {
     // given
@@ -7,11 +8,13 @@ test('that component is rendered correctly', () => {
         id: 4711,
         name: 'Rick',
         status: 'Alive',
-        image: 'http://imageurl'
+        image: 'http://imageurl',
+        species: 'Human',
+        location: 'Earth'
     };
 
     // when
-    render(<GalleryItem character={character} />);
+    render(<GalleryItem character={character} />, {wrapper: MemoryRouter});
 
     // then
     const imageTag = screen.getByTestId('character-image') as HTMLImageElement;
