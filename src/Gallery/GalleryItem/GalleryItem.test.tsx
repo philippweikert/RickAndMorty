@@ -10,7 +10,8 @@ test('that component is rendered correctly', () => {
         status: 'Alive',
         image: 'http://imageurl',
         species: 'Human',
-        location: 'Earth'
+        location: {name: 'Earth'},
+        origin: {name: 'Earth'}
     };
 
     // when

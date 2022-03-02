@@ -27,6 +27,7 @@ export default function CharacterDetail() {
                             <li>Name: {character.name}</li>
                             <li>Status: {character.status}</li>
                             <li>Spezies: {character.species}</li>
+                            <li>Aufenthaltsort: {character.location?.name} </li>
                         </ul>
                         <Link to="/gallery">Zurück</Link>
                     </div>

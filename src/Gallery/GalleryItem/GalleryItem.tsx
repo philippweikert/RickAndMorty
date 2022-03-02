@@ -18,7 +18,7 @@ export default function GalleryItem(props: GalleryItemProps) {
             <div>
                 <ul>
                     <li data-testid="character-name">Name: { props.character.name }</li>
-                    <li data-testid="character-status">Status: { props.character.status }</li>
+                    <li data-testid="character-status">Origin: { props.character.origin?.name }</li>
                 </ul>
             </div>
         </div>

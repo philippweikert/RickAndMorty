@@ -3,8 +3,9 @@ export interface Character {
     name: string;
     status: string; 
     image: string;
-    species: string;
-    location: string;
+    species?: string;
+    location?: {name: string;}
+    origin?: {name: string};
 }
 
 export interface Info {
