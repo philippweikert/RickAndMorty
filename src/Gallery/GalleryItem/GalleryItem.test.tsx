@@ -21,5 +21,5 @@ test('that component is rendered correctly', () => {
     const imageTag = screen.getByTestId('character-image') as HTMLImageElement;
     expect(imageTag.src).toEqual('http://imageurl/');
     expect(screen.getByTestId('character-name').textContent).toEqual('Name: Rick');
-    expect(screen.getByTestId('character-status').textContent).toEqual('Status: Alive');
+    expect(screen.getByTestId('character-origin').textContent).toEqual('Origin: Earth');
 });
